@@ -1,0 +1,22 @@
+<ActionBar class="action-bar" android:title="Todo Detail">
+    <NavigationButton text="Back" android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
+    <ActionItem ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()" android.position="right"></ActionItem>
+    <Label class="action-bar-title" text="Todo Detail"></Label>   
+</ActionBar>
+
+<GridLayout class="page page-content">
+    <ScrollView orientation="vertical">
+        <StackLayout tkExampleTitle tkToggleNavButton>
+            <RadDataForm #dataform [source]="dataItems" validationMode="Manual" commitMode="Manual" row="1">
+                <TKEntityProperty tkDataFormProperty name="id" index="1" [hidden]="true"></TKEntityProperty>
+                <TKEntityProperty tkDataFormProperty name="title" index="2"></TKEntityProperty>
+                <TKEntityProperty tkDataFormProperty name="description" index="3"></TKEntityProperty>
+                <TKEntityProperty tkDataFormProperty name="status" index="4" [valuesProvider]="statusProvider">
+                    <TKPropertyEditor tkEntityPropertyEditor type="Picker"></TKPropertyEditor>
+                </TKEntityProperty>
+            </RadDataForm>
+            <Label [text]="text" textWrap="true" margin="12" android:color="#C73339" ios:color="red" horizontalAlignment="center"></Label>
+            <Button text="Submit" (tap)="onTap()" margin="12" horizontalAlignment="stretch" class="btn btn-primary btn-active"></Button>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>
