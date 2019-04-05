@@ -1,0 +1,40 @@
+
+.listItemGridLayout {
+    padding: 16;
+    background-color: #FFFFFF;
+    color: #000;
+    border-color: #2a3448 ;
+}
+
+
+.gridLayoutLayout {
+    background-color: white;
+}
+
+.editViewStackLayout {
+    background-color: #219ab3;
+    color: #FFFFFF;
+    padding: 16;
+}
+
+.swipetemplateLabel {
+    size: 20;
+}
+
+.deleteViewStackLayout {
+    padding: 16;
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
+
+.complete {
+    background-color: rgba(204, 255, 204);    
+}
+
+.progress {
+    background-color: rgba(255, 204, 204);    
+}
+
+.not-started {
+    background-color: rgba(242, 242, 242);    
+}
