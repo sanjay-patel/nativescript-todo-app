@@ -1,7 +1,7 @@
 # NativeScript ToDo App
 
 ## Blog
-Please check more detail on our blog <a href="http://www.teclogiq.com/blog/nativescript-todo-application/">nativescript-todo-application</a> 
+Please check more detail on our blog <a target="_blank" href="http://www.teclogiq.com/blog/nativescript-todo-application/">nativescript-todo-application</a> 
 
 ## Quick Start
 
